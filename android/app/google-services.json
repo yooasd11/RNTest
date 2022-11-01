@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "982945943583",
+    "firebase_url": "https://youchat-3e544.firebaseio.com",
+    "project_id": "youchat-3e544",
+    "storage_bucket": "youchat-3e544.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:982945943583:android:90b41ae4bc654b116d852a",
+        "android_client_info": {
+          "package_name": "coco.test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "982945943583-e0p8vueaalte79iet0k6vue1e4g7e671.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBL6HWKHiROHr7T1_pJnb3oBCWXEKIom0Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "982945943583-e0p8vueaalte79iet0k6vue1e4g7e671.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:982945943583:android:6461f7bbfac455c36d852a",
+        "android_client_info": {
+          "package_name": "com.yooasd11.youchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "982945943583-43bg1di2jcevfeo2h8n5mmmtorsl5m70.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.yooasd11.youchat",
+            "certificate_hash": "67981f88244b89e527a963689cb8c179df4919ef"
+          }
+        },
+        {
+          "client_id": "982945943583-e0p8vueaalte79iet0k6vue1e4g7e671.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBL6HWKHiROHr7T1_pJnb3oBCWXEKIom0Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "982945943583-e0p8vueaalte79iet0k6vue1e4g7e671.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

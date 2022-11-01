@@ -1,9 +1,13 @@
-import React, { FC, useCallback } from "react";
+import React, { FC, useCallback, useState } from "react";
 import { FlatList, StyleSheet, Text } from "react-native";
+import useTagList from "../hooks/useTagList";
+import TagSelector from "./TagSelector";
 
 interface Props {
-  list: string[];
+  list?: string[];
 }
+
+const TAGS = ["A", "B", "C"];
 
 const styles = StyleSheet.create({
   container: {
@@ -11,10 +15,13 @@ const styles = StyleSheet.create({
   },
 });
 
-const SimpleList: FC<Props> = ({ list }) => {
+const SimpleList: FC<Props> = ({}) => {
+  const [selectedTag, setSelectedTag] = useState(TAGS[0]);
+  const list = useTagList(selectedTag);
+
   const renderItem = useCallback((args: { item: string; index: number }) => {
     const { item } = args;
-    for (let i = 0; i < 500_000_000; i++) {}
+    // for (let i = 0; i < 500_000_000; i++) {}
     return <Text>{item}</Text>;
   }, []);
   return (
@@ -23,6 +30,9 @@ const SimpleList: FC<Props> = ({ list }) => {
       data={list}
       keyExtractor={(item) => item}
       renderItem={renderItem}
+      ListHeaderComponent={
+        <TagSelector selectedTag={selectedTag} onPressTag={setSelectedTag} />
+      }
       ListEmptyComponent={<Text>아무 것도 없삼~</Text>}
     />
   );
